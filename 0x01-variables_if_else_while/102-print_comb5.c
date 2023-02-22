@@ -8,35 +8,29 @@
 
 int main(void)
 {
-	int i;
-	int j;
-	int u;
-	int k;
+	int n1 = 48;
+	int a = 0;
+	int b;
 
-	for (i = 0 ; i < 10 ; i++)
+	int com = 44;
+	while (a <= 99)
 	{
-		for (j = 0 ; j < 10 ; j++)
+		b = a + 1;
+		while (b <= 99)
 		{
-			for (u = 0 ; u < 10 ; u++)
+			putchar((a / 10) + n1);
+			putchar((a % 10) + n1);
+			putchar(32);
+			putchar((b / 10) + n1);
+			putchar((b % 10) + n1);
+			if (a != 98 || b != 99)
 			{
-				for (k = 1 ; k < 10 ; k++)
-				{
-					if (u < k && u != k)
-					{
-						putchar(i + '0');
-						putchar(j + '0');
-						putchar(' ');
-						putchar(u + '0');
-						putchar(k + '0');
-						if (u + k != 18)
-						{
-							putchar(',');
-							putchar(' ');
-						}
-					}
-				}
+				putchar(com);
+				putchar(32);
 			}
+			b += 1;
 		}
+		a += 1;
 	}
 	putchar('\n');
 	return (0);
