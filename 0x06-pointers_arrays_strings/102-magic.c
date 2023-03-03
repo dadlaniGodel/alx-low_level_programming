@@ -1,5 +1,11 @@
 #include <stdio.h>
 
+/**
+ * main - main function
+ * @n: integer parameter
+ * Return: 0
+ */
+
 int main(void)
 {
 	int n;
